@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Saans', 'Saans Fallback', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Serrif', 'Serrif Fallback', ui-serif, Georgia, serif;
+    --font-mono: 'SaansMono', 'SaansMono Fallback', ui-monospace, monospace;
+
+    --color-off-black: #111111;
+    --color-warm-cream: #faf9f6;
+    --color-fin-orange: #ff5600;
+    --color-report-orange: #fe4c02;
+    --color-oat-border: #dedbd6;
+    --color-warm-sand: #d3cec6;
+    --color-black-80: #313130;
+    --color-black-60: #626260;
+    --color-black-50: #7b7b78;
+    --color-content-tertiary: #9c9fa5;
+    --color-report-blue: #65b5ff;
+    --color-report-green: #0bdf50;
+    --color-report-red: #c41c1c;
+    --color-report-pink: #ff2067;
+    --color-report-lime: #b3e01c;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(123, 123, 120, 0.4) #faf9f6;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #faf9f6;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(123, 123, 120, 0.4);
+    border-radius: 4px;
+    border: 2px solid #faf9f6;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(123, 123, 120, 0.6);
+}
+
+*::-webkit-scrollbar-corner {
+    background: #faf9f6;
+}
