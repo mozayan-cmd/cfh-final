@@ -173,6 +173,6 @@ Route::get('/api/related-records/{model}/{id}', function ($model, $id) {
 })->name('api.related-records');
 
 Route::get('/seed', function () {
-    \Artisan::call('migrate:fresh', ['--seed' => true]);
-    return response()->json(['message' => 'Database seeded']);
+    \Artisan::call('db:seed', ['--class' => 'Database\\Seeders\\AdminUserSeeder']);
+    return response()->json(['message' => 'Admin user seeded']);
 });
